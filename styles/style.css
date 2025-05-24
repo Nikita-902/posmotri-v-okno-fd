@@ -51,7 +51,7 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .content {
@@ -60,8 +60,6 @@ ol {
   align-items: end;
   column-gap: 30px;
 }
-
-.result {}                /*левая часть*/
 
 .result__video-container {
   height: 386px;
@@ -101,17 +99,11 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:has(:focus) {
-  border: none;                   /*не работает почему-то*/
-}
-
 .search-form__label:has(:focus-visible) {
   outline: 1px solid white;
 }
 
-.search-form__label-text {}
-
-.search-form__label:hover>.search-form__label-text {
+.search-form__label:hover > .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -127,7 +119,7 @@ ol {
 }
 
 .search-form__textfield::placeholder {
-  color: #FFFFFFB2;
+  color: #ffffffb2;
   font-family: Fira Sans Condensed;
 }
 
@@ -141,8 +133,6 @@ ol {
   padding-bottom: 5px;
 }
 
-.search-form__checkbox {}
-
 .search-form__pseudo-checkbox {
   border: 1px solid white;
   height: 19px;
@@ -153,7 +143,7 @@ ol {
 }
 
 .search-form__pseudo-checkbox::after {
-  content: "";
+  content: '';
   background-color: white;
   height: 15px;
   width: 15px;
@@ -162,7 +152,7 @@ ol {
   top: 1px;
 }
 
-.search-form__checkbox:not(:checked)+.search-form__pseudo-checkbox::after {
+.search-form__checkbox:not(:checked) + .search-form__pseudo-checkbox::after {
   display: none;
 }
 
@@ -199,7 +189,7 @@ ol {
   font-family: Fira Sans Condensed;
 }
 
-.content__details {          /*правая часть*/
+.content__details {
   display: grid;
   grid-template-rows: 210px 298px;
   row-gap: 26px;
@@ -230,8 +220,6 @@ ol {
   margin-right: 7px;
   width: 390px;
 }
-
-.content__list-item {}
 
 .content__card-link {
   text-decoration: none;
@@ -268,7 +256,7 @@ ol {
   max-height: 103px;
 }
 
-.content__video-card:hover>.content__video-card-description-container {
+.content__video-card:hover > .content__video-card-description-container {
   text-decoration: underline;
 }
 
