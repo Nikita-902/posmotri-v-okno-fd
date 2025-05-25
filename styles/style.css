@@ -84,6 +84,7 @@ ol {
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  max-height: 54px;
 }
 
 .search-form__fieldset-title {
@@ -106,16 +107,21 @@ ol {
   appearance: none;
   font-size: 18px;
   font-weight: 400;
+  font-family: 'Fira Sans Condensed', sans-serif;
   color: #fff;
+  min-width: 225px;
   background-color: transparent;
   border-left: none;
   border-right: none;
-  border-color: currentColor;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
 }
 
 .search-form__textfield::placeholder {
   color: #ffffffb2;
-  font-family:  'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .search-form__textfield:focus {
@@ -154,7 +160,7 @@ ol {
 .search-form__label-text {
   font-size: 18px;
   font-weight: 400;
-  font-family:  'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .search-form__label:hover > .search-form__label-text {
@@ -191,12 +197,14 @@ ol {
   height: 34px;
   align-self: flex-end;
   outline-offset: 1px;
-  font-family:  'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .content__details {
   display: grid;
   row-gap: 26px;
+  top: 1px;
+  min-height: 534px;
 }
 
 .title {
@@ -298,7 +306,7 @@ ol {
   margin: 30px 3px 2px 2px;
   font-size: 18px;
   font-weight: 700;
-  font-family:  'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .visually-hidden {
