@@ -57,12 +57,14 @@ ol {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
-  align-items: end;
+  grid-template-areas: "content sidebar";
+  align-items: start;
   column-gap: 30px;
 }
 
 .result__video-container {
   height: 386px;
+  margin-top: 78px;
   margin-bottom: 16px;
   position: relative;
 }
@@ -84,7 +86,6 @@ ol {
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  max-height: 54px;
 }
 
 .search-form__fieldset-title {
@@ -204,7 +205,6 @@ ol {
   display: grid;
   row-gap: 26px;
   top: 1px;
-  min-height: 534px;
 }
 
 .title {
